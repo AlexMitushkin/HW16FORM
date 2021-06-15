@@ -13,7 +13,7 @@
   <div class="container">
     <div class="title">
       <h1>Let's get Started.</h1>
-      <h4>Stay as long if you like.No commitment.Cancel anytime.</h4>
+      <h4>Stay as long if you like. No commitment. Cancel anytime.</h4>
     </div>
 
     <form action="">
@@ -21,84 +21,122 @@
         <div class="form-title account">Your Account</div>
         <div class="form-box account-box">
           <div>
-            <label for="">Email</label>
-            <input type="email"  />
-            <span>No span ever!</span>
+            <label for="email">Email</label>
+            <input type="email" id="email" />
+            <div class="comment">No span ever!</div>
           </div>
           <div>
-            <label for="">Password</label>
-            <input type="password" minlength="6" />
-            <span>As last 6 characters</span>
+            <label for="password">Password</label>
+            <input type="password" id="password" minlength="6" />
+            <div class="comment">As last 6 characters</div>
           </div>
           <div>
-            <label for="">URL</label>
-            <input type="url"  />
-            <span>http://google.com</span>
+            <label for="url">URL</label>
+            <input type="url" id="url" />
+            <div class="comment">http://google.com</div>
           </div>
-          <div>
-            <input class="box" type="checkbox" />
-            <span>(+$2.40 month)</span>
-            <label for="">Castom Doimain</label>
-            <input type="text"  />
-            <span>Type in a document Is check avaliablitu</span>
+          <div class="custom">
+            <label for="avaliablity">Castom Doimain</label>
+            <div class="check-box">
+              <input type="checkbox" />
+              <p>(+$2.40 month)</p>
+              <input type="text" id="avaliablity">
+              <div class="comment">Type in a document Is check avaliablity</div>
+            </div>
+
           </div>
         </div>
       </div>
 
       <div class="address-form">
         <div class="form-title address">Your Address</div>
-               <div class="form-box address-box">
-          <div class="adress-text">
-
-            <label for="">Address</label>
-            <textarea name="" id="" cols="50" rows="10"></textarea>
-            <span>So we can mail pauman where ther free wedding Planning Hit.</span>
-                 </div>
+        <div class="form-box address-box">
+          <div class="address-text">
+            <label for="adress">Address</label>
+            <textarea name="adress" id="adress"></textarea>
+            <div class="comment">So we can mail pauman where ther free wedding Planning Hit.</div>
+          </div>
         </div>
       </div>
+
       <div class="payment-form">
+        <div class="form-title payment">Payment</div>
+        <div class="form-box payment-box">
+          <div>
+            <label for="card-type">Card Type</label>
+            <select name="select" id="card-type">
+              <option value="value1" selected>Visa</option>
+              <option value="value2">MasterCard</option>
+            </select>
+          </div>
+          <div>
+            <label for="first-name">First Name</label>
+            <input type="text" id="first-name" />
+          </div>
 
-       <div class="form-title payment">Payment</div>
-       <div class="form-box payment-box">
-        <div class="address-form">
-          <label for="list">Card Type</label>
-          <input type="text" id="list" />
-        </div>
-        <div>
-          <label for="">First Name</label>
-          <input type="text" />
-        </div>
+          <div>
+            <label for="last-name">Last Name</label>
+            <input type="text" id="last-name" />
+          </div>
+          <div>
+            <label for="card-number">Card Number</label>
+            <input type="text" id="card-number" />
+          </div>
+      <div class="exp-date">
+            <label for="date">Exp. Date</label>
+            <div id="date">
+              <select id="month" name="month">
+                <option>Month</option>
+                <option value="01">01-January</option>
+                <option value="02">02-February</option>
+                <option value="03">03-March</option>
+                <option value="04">04-April</option>
+                <option value="05">05-May</option>
+                <option value="06">06-June</option>
+                <option value="07">07-July</option>
+                <option value="08">08-August</option>
+                <option value="09">09-September</option>
+                <option value="10">10-October</option>
+                <option value="11">11-November</option>
+                <option value="12">12-December</option>
+              </select>
+              <select id="year" name="month">
+                <option>Year</option>
+                <option value="01">2009</option>
+                <option value="02">2010</option>
+                <option value="03">2011</option>
+                <option value="04">2012</option>
+                <option value="05">2013</option>
+                <option value="06">2014</option>
+                <option value="07">2015</option>
+                <option value="08">2016</option>
+                <option value="09">2017</option>
+                <option value="10">2018</option>
+                <option value="11">2019</option>
+                <option value="12">2020</option>
+              </select>
+            </div>
+          </div>
+          <div class="cvs">
+            <label for="">CVS code</label>
+            <div>
+              <input type="text" maxlength="3" />
+            </div>
 
-        <div>
-          <label for="">Last Name</label>
-          <input type="text" />
-        </div>
-        <div>
-          <label for="">Card Number</label>
-          <input type="text" />
-        </div>
+          </div>
+          <h4>Your Monthly Charge <span><sup>$</sup>14<sup class="line">99</sup><sup>USD</sup></span></h4>
 
-        <div>
-          <label for="">Exp. Date</label>
-          <input type="date" />
-          <input type="date" />
+          <p>
+            By clicking "signup", you agree to accept our
+            <a href=""> terms and condition</a>
+          </p>
+          <button type="submit">SIGNUP</button>
         </div>
-        <div>
-          <label for="">CVS code</label>
-          <input type="text" maxlength="3" />
-        </div>
-
-        <h4>Your Monthly Charge<span>$1499USD</span></h4>
-        <p>
-          By clicking "signup", you agree to accept our
-          <a href=""> terms and condition</a>
-        </p>
-        <button type="submit">SIGNUP</button>
       </div>
-    </div>
   </div>
   </form>
   </div>
+
 </body>
 
 </html>

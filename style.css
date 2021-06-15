@@ -1,3 +1,5 @@
+/* Common */
+
 * {
   margin: 0;
   padding: 0;
@@ -5,74 +7,202 @@
 }
 body {
   background: #9d9ab5;
+  font-size: 18px;
 }
+
 .container {
-  margin: auto 15px;
-  background: #fff;
-  border: 5px solid #ebecef;
+  background-color: #fff;
   border-radius: 0 0 15px 15px;
-  /* position: relative; */
+  /* border:  ????*/
+  width: 90%;
+  margin: 0 auto;
+  height: 700px;
 }
+
 .title {
   display: flex;
   justify-content: center;
-}
-.form-title {
-  font-size: 35px;
-  color: #fff;
-  text-align: center;
-  padding: 35px;
-}
-.account {
-  color: #000;
-  background-color: #fdbe71;
-}
-.address {
-  background-color: #8ec641;
-}
-.payment-form {
-  background-color: #756e90;
-}
-.buttton {
-  background-color: #8cc73e;
+  height: 70px;
+  align-items: center;
 }
 .title h4 {
-  padding: 15px;
+  padding-top: 10px;
+  margin-left: 20px;
+  font-style: italic;
 }
-
 form {
   display: flex;
-  margin: 20px;
 }
 
+.form-title {
+  height: 70px;
+  text-align: center;
+  line-height: 70px;
+  font-size: 25px;
+  color: #fff;
+}
+.account {
+  background: #fdbe71;
+  color: #000;
+  position: relative;
+}
+.account::before {
+  content: "";
+  position: absolute;
+  height: 70px;
+  width: 20px;
+  background: #fdbe71;
+  left: -20px;
+}
+.account::after {
+  content: "";
+  position: absolute;
+  background: red;
+  width: 20px;
+  height: 20px;
+  left: -20px;
+  top: -20px;
+  clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+  background: #b48750;
+}
+.address {
+  background: #8ec641;
+}
 .account-form,
 .address-form,
 .payment-form {
-  width: 34%;
+  width: 33.3333%;
+}
+.account-box div {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  margin-bottom: 15px;
 }
-form input {
-  width: 200px;
-}
-.box {
-  width: 20px;
-}
-.adress-text {
-  border-right: 2px dashed black;
-}
-.form-title {
-}
-.form-box {
-  display: flex;
-  flex-direction: column;
-  padding-top: 20px;
-  font-size: 20px;
-}
-.account-box {
-  padding-left: 25px;
+.account-box label {
+  width: 25%;
   color: #fdbe71;
 }
-.account-box span {
-  color: #000;
+.account-box input {
+  width: 65%;
+}
+.account-box {
+  padding: 20px 0 0 25px;
+}
+
+.check-box {
+  width: 65%;
+  align-items: flex-end;
+}
+.check-box input[type="checkbox"] {
+  width: 13px;
+  margin-right: 5px;
+  margin-bottom: 2px;
+}
+.check-box input[type="text"] {
+  width: 100%;
+}
+.check-box p {
+  font-size: 14px;
+}
+.check-box .comment {
+  margin-left: 15%;
+}
+.comment {
+  margin-left: 50%;
+}
+
+.address-box {
+  height: 300px;
+  border-left: 2px dotted #ccc;
+  padding: 20px 0 0 25px;
+}
+textarea {
+  resize: none;
+  width: 65%;
+  height: 100px;
+}
+.address-text label {
+  color: #8ec641;
+  width: 25%;
+}
+.address-text {
+  display: flex;
+  flex-wrap: wrap;
+}
+.address-text .comment {
+  margin-left: 25%;
+  margin-top: 10px;
+}
+.payment-form {
+  background: #756e90;
+  position: relative;
+  height: 600px;
+}
+.payment-form::before {
+  content: "";
+  width: 20px;
+  height: 600px;
+  background: #756e90;
+  position: absolute;
+  right: -20px;
+}
+.payment-form::after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  background: #504a69;
+  position: absolute;
+  right: -20px;
+  top: -20px;
+  clip-path: polygon(0 0, 0% 100%, 100% 100%);
+}
+.payment-box {
+  margin: 0 5px 0 25px;
+  border-top: 2px dotted #ccc;
+  color: #fff;
+  padding-top: 20px;
+}
+.payment-box div {
+  display: flex;
+  margin-bottom: 25px;
+}
+.payment-box label {
+  width: 25%;
+}
+.payment-box input,
+.payment-box select {
+  width: 50%;
+}
+.payment-box .exp-date {
+  margin: 0;
+}
+.payment-form h4 {
+  font-style: italic;
+  font-size: 22px;
+  border-bottom: 2px dotted #ccc;
+  padding-bottom: 10px;
+}
+.payment-form h4 span {
+  color: #fdbe71;
+}
+.payment-form p {
+  margin-top: 40px;
+  text-align: center;
+}
+.line {
+  text-decoration: underline;
+}
+.payment-form a {
+  color: #fff;
+}
+button {
+  width: 150px;
+  height: 50px;
+  background: #8ec641;
+  border-radius: 10px;
+  color: #fff;
+  border: none;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 25px;
 }
